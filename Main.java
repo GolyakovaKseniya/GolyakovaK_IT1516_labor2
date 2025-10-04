@@ -48,7 +48,6 @@ public class Main {
                     System.out.println("Конструктор с параметром");
                     System.out.println(people2.toString());
                     System.out.println(people3.toString());
-
                     System.out.println();
                     break;
                 }
