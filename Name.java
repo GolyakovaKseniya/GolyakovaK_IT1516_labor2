@@ -33,12 +33,12 @@ public class Name {
         this.firstname = "Клеопатра";
         this.patronymic = null;
     }
-    //копирования
-    public Name(Name name){
-        this.surname = name.surname;
-        this.firstname = name.firstname;
-        this.patronymic = name.patronymic;
-    }
+//    //копирования
+//    public Name(Name name){
+//        this.surname = name.surname;
+//        this.firstname = name.firstname;
+//        this.patronymic = name.patronymic;
+//    }
     //с параметром
     public Name(String surname, String firstname, String patronymic){
         setSurname(surname);

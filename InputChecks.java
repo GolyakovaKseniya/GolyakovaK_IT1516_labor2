@@ -1,8 +1,13 @@
 public class InputChecks {
     public double point(double number){
         if(Math.abs(number) >= 1000000){
-            System.out.println(number + " - cлишком большое число! Будет установлено значение 10000");
-            return 10000;
+            if(number > 0){
+                System.out.println(number + " - cлишком большое число! Будет установлено значение 10000");
+                return 10000;
+            }else{
+                System.out.println(number + " - cлишком большое число! Будет установлено значение -10000");
+                return -10000;
+            }
         }
         return number;
     }

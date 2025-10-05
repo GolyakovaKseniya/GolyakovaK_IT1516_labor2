@@ -25,12 +25,12 @@ public class Main {
 
                     Point point1 = new Point();
                     Point point2 = new Point(55, 103);
-                    Point point3 = new Point(point2);
+                    Point point3 = new Point(-5,12);
 
                     System.out.println("Текстовое представление точек: ");
                     System.out.println("Точка 1 (конструктор по умолчанию): " + point1.toString());
                     System.out.println("Точка 2 (конструктор с параметром): " + point2.toString());
-                    System.out.println("Точка 3 (конструктор копирования): " + point3.toString());
+                    System.out.println("Точка 3 (конструктор c параметром): " + point3.toString());
                     System.out.println();
                     break;
                 }

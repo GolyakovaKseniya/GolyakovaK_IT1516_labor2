@@ -19,7 +19,6 @@ public class City {
         this.nameCity = nameCity;
     }
 
-
     //конструктор с названием города
     public City(String nameCity){
         this.nameCity = nameCity;

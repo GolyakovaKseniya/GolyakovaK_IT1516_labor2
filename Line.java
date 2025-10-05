@@ -24,10 +24,10 @@ public class Line {
         this.start = new Point(1, 3);
         this.end = new Point(23, 8);
     }
-    public Line(Line line){
-        this.start = new Point(line.start);
-        this.end = new Point(line.end);
-    }
+//    public Line(Line line){
+//        this.start = new Point(line.start);
+//        this.end = new Point(line.end);
+//    }
     public Line(Point start, Point end){
         setStart(start);
         setEnd(end);

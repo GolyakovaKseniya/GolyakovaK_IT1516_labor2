@@ -27,10 +27,10 @@ public class Point {
         this.y = 12.4;
     }
     //копирования
-    public Point(Point point){
-        this.x = point.x;
-        this.y = point.y;
-    }
+//    public Point(Point point){
+//        this.x = point.x;
+//        this.y = point.y;
+//    }
     //с параметром
     public Point(double x, double y){
         setX(x);
