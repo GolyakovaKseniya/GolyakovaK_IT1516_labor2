@@ -5,6 +5,7 @@ public class Fraction {
     private int denominator;
     private InputChecks check = new InputChecks();
 
+    //свойства
     public int getNumerator() {
         return numerator;
     }
@@ -39,6 +40,12 @@ public class Fraction {
             numerator = -numerator;
             denominator = -denominator;
         }
+    }
+
+    //конструкторы
+    public Fraction(){
+        this.numerator = 1;
+        this.denominator = 3;
     }
     public Fraction(int numerator, int denominator){
         setNumerator(numerator);

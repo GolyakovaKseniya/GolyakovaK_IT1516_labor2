@@ -2,6 +2,7 @@ public class Line {
     private Point start;
     private Point end;
 
+    //свойства
     public Point getStart() {
         return start;
     }
@@ -18,6 +19,7 @@ public class Line {
         this.end = end;
     }
 
+    //конструкторы
     public Line(){
         this.start = new Point(1, 3);
         this.end = new Point(23, 8);

@@ -172,7 +172,7 @@ public class Main {
                 }
                 case "5.5":{
                     System.out.println("Задача 5.5");
-                    Fraction fraction1 = new Fraction(1, 3);
+                    Fraction fraction1 = new Fraction();
                     Fraction fraction2 = new Fraction(2, 3);
                     Fraction fraction3 = new Fraction(5, 8);
                     Fraction fraction4 = new Fraction(2, 7);
@@ -216,6 +216,7 @@ public class Main {
                             + fraction1.add(fraction2).divide(fraction3));
                     System.out.println(fraction1.add(fraction2).divide(fraction3) + " - 5 " + " = " + result);
                     System.out.println("Результат: " + result);
+                    System.out.println();
                     break;
                 }
                 case "0":{

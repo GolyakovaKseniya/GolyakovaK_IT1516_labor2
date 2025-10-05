@@ -4,6 +4,8 @@ public class City {
     private String nameCity;
     private Map<String, Integer> ways;
     private InputChecks check = new InputChecks();
+
+    //свойства
     public String getNameCity() {
         return nameCity;
     }
@@ -16,6 +18,8 @@ public class City {
     public void setNameCity(String nameCity) {
         this.nameCity = nameCity;
     }
+
+
     //конструктор с названием города
     public City(String nameCity){
         this.nameCity = nameCity;
