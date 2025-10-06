@@ -98,10 +98,8 @@ City b = new City("B");
 City c = new City("C");
 a.addRoute("B", 5);
 a.addRoute("D", 6);
-
 b.addRoute("A", 5);
 b.addRoute("C", 3);
-
 c.addRoute("B", 3);
 Вывод:
 A: {B=5, D=6}
@@ -112,10 +110,8 @@ City b = new City("B");
 City c = new City("C");
 a.addRoute("B", -5);
 a.addRoute("D", 6);
-
 b.addRoute("A", 5);
 b.addRoute("C", 3);
-
 c.addRoute("B", 3);
 Вывод:
 Стоимость не может быть меньше или равной 0. Установлено значение 1
@@ -123,7 +119,6 @@ c.addRoute("B", 3);
 A: {B=1, D=6}
 B: {A=5, C=3}
 C: {B=3}
-
 
 # Задание 4
 ## Задача 8
@@ -137,22 +132,18 @@ C: {B=3}
 1) City A = new City("A");
 A.addRoute("B", 5);
 A.addRoute("D", 6);
-
 Map<String, Integer> bWay = new HashMap<>();
 bWay.put("A", 5);
 bWay.put("C", 3);
 City B = new City("B", bWay);
-
 Map<String, Integer> cWay = new HashMap<>();
 cWay.put("B", 3);
 cWay.put("D", 4);
 City C = new City("C", cWay);
-
 City D = new City("D");
 D.addRoute("C", 4);
 D.addRoute("E", 2);
 D.addRoute("A", 6);
-
 Вывод:
 A: {B=5, D=6, F=1}
 B: {A=5, C=3}
@@ -161,17 +152,14 @@ D: {A=6, C=4, E=2}
 2) City A = new City("A");
 A.addRoute("B", 5);
 A.addRoute("D", 6);
-
 Map<String, Integer> bWay = new HashMap<>();
 bWay.put("A", -5);
 bWay.put("C", 3);
 City B = new City("B", bWay);
-
 Map<String, Integer> cWay = new HashMap<>();
 cWay.put("B", 3);
 cWay.put("D", 4);
 City C = new City("C", cWay);
-
 City D = new City("D");
 D.addRoute("C", 4);
 D.addRoute("E", 2);
