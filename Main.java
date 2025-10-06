@@ -184,7 +184,7 @@ public class Main {
                     System.out.println();
 
                     System.out.println("Примеры выполнения операций: ");
-                    Fraction sumResult = fraction1.add(fraction2);
+                    Fraction sumResult = fraction1.summa(fraction2);
                     System.out.println(fraction1.toString() + " + " + fraction2.toString() + " = " + sumResult);
 
                     Fraction subtractResult = fraction3.subtract(fraction4);
@@ -196,7 +196,7 @@ public class Main {
                     Fraction divideResult = fraction2.divide(fraction4);
                     System.out.println(fraction2.toString() + " / " + fraction4.toString() + " = " + divideResult);
 
-                    Fraction addInt = fraction1.add(3);
+                    Fraction addInt = fraction1.summa(3);
                     System.out.println(fraction1.toString() + " + " + 3 + " = " + addInt);
 
                     Fraction subtractInt = fraction2.subtract(4);
@@ -210,11 +210,11 @@ public class Main {
 
                     System.out.println();
                     System.out.println("Вычисление выражения f1.sum(f2).div(f3).minus(5)");
-                    Fraction result = fraction1.add(fraction2).divide(fraction3).subtract(5);
-                    System.out.println(fraction1.toString() + " + " + fraction2.toString() + " = " + fraction1.add(fraction2));
-                    System.out.println(fraction1.add(fraction2) + " / " + fraction3.toString() + " = "
-                            + fraction1.add(fraction2).divide(fraction3));
-                    System.out.println(fraction1.add(fraction2).divide(fraction3) + " - 5 " + " = " + result);
+                    Fraction result = fraction1.summa(fraction2).divide(fraction3).subtract(5);
+                    System.out.println(fraction1.toString() + " + " + fraction2.toString() + " = " + fraction1.summa(fraction2));
+                    System.out.println(fraction1.summa(fraction2) + " / " + fraction3.toString() + " = "
+                            + fraction1.summa(fraction2).divide(fraction3));
+                    System.out.println(fraction1.summa(fraction2).divide(fraction3) + " - 5 " + " = " + result);
                     System.out.println("Результат: " + result);
                     System.out.println();
                     break;
