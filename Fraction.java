@@ -54,7 +54,7 @@ public class Fraction {
     }
     //операции с дробями
     //операция сложения
-    public  Fraction add(Fraction fraction){
+    public  Fraction summa(Fraction fraction){
         int newNumerator = this.numerator * fraction.denominator + fraction.numerator * this.denominator;
         int newDenominator = this.denominator * fraction.denominator;
         return new Fraction(newNumerator, newDenominator);
@@ -78,7 +78,7 @@ public class Fraction {
         return new Fraction(newNumerator, newDenominator);
     }
     //операции с целыми числами
-    public Fraction add(int number){
+    public Fraction summa(int number){
         return add(new Fraction(number, 1));
     }
     public Fraction subtract(int number){
