@@ -19,9 +19,9 @@ public class InputChecks {
         return denominator;
     }
     public Integer negativeNumber(int number){
-        if(number < 0){
-            System.out.println("Стоимость не может быть меньше 0. Установлено значение 0");
-            return 0;
+        if(number <= 0){
+            System.out.println("Стоимость не может быть меньше или равна 0. Установлено значение 1");
+            return 1;
         }
         return number;
     }
