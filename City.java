@@ -28,6 +28,13 @@ public class City {
     public City(String nameCity, Map<String,Integer> way){
         this.nameCity = nameCity;
         this.ways = new HashMap<>(way);
+
+        for(Map.Entry<String, Integer> entry : way.entrySet()){
+            String fromCity = entry.getKey();
+            int cost = entry.getValue();
+            cost = check.negativeNumber(cost);
+            this.ways.put(fromCity,cost);
+        }
     }
     //добавление маршрута и стоимости
     public void addRoute(String nameCity, int cost){
